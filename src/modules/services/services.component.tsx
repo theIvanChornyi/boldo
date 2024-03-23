@@ -1,40 +1,20 @@
+import SectionHeader from '../../shared/components/section-header/section-header.component';
+import ServiceItem from './components/service-item.component';
+import { SERVICES_ITEMS_DATA } from './services.const';
 import * as css from './services.styles';
-import item1pic from '../../assets/images/services-item-1.jpg';
 
 const Services: React.FC = () => {
+  const items = SERVICES_ITEMS_DATA.map(item => (
+    <ServiceItem key={item.href} {...item} />
+  ));
+
   return (
     <section className={css.section}>
-      <header>
-        <h2>Handshake infographic mass market crowdfunding iteration.</h2>
-        <h3>Our Services</h3>
-      </header>
-
-      <ul>
-        <li>
-          <div>
-            <img src={item1pic} loading="lazy" alt="pic1" />
-          </div>
-          <span>Cool feature title</span>
-          <p>Learning curve network effects return on investment.</p>
-          <a href="#3">Explore page</a>
-        </li>
-        <li>
-          <div>
-            <img src={item1pic} loading="lazy" alt="pic1" />
-          </div>
-          <span>Cool feature title</span>
-          <p>Learning curve network effects return on investment.</p>
-          <a href="#3">Explore page</a>
-        </li>
-        <li>
-          <div>
-            <img src={item1pic} loading="lazy" alt="pic1" />
-          </div>
-          <span>Cool feature title</span>
-          <p>Learning curve network effects return on investment.</p>
-          <a href="#3">Explore page</a>
-        </li>
-      </ul>
+      <SectionHeader
+        title="Handshake infographic mass market crowdfunding iteration."
+        subtitle="Our Services"
+      />
+      <ul className={css.servicesList}>{items}</ul>
     </section>
   );
 };

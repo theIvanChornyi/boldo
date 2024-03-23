@@ -7,4 +7,5 @@ export const COLORS = Object.freeze({
   ANTI_FLASH_WHITE: '#F1F1F1',
   DARK_SKY_BLUE: '#8FB6D5',
   SONIK_SILVER: '#777777',
+  BLACK: '#000000',
 });
