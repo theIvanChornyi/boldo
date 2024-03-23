@@ -6,7 +6,7 @@ import {
 } from '../../shared/const/fonts.const';
 
 export const section = css`
-  padding: 82px 150px;
+  padding: 84px 150px 77px;
 `;
 
 export const servicesList = css`

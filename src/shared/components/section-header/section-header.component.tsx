@@ -8,8 +8,8 @@ interface IProps {
 const SectionHeader: React.FC<IProps> = ({ title, subtitle }) => {
   return (
     <header className={css.header}>
-      <h2 className={css.title}>{title}</h2>
-      <h3 className={css.subTitle}>{subtitle}</h3>
+      {title && <h2 className={css.title}>{title}</h2>}
+      {subtitle && <h3 className={css.subTitle}>{subtitle}</h3>}
     </header>
   );
 };

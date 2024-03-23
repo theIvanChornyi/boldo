@@ -1,33 +1,14 @@
-import Button from '../../shared/components/button/button.component';
 import * as css from './connection.styles';
+import ComponentsItem from './components/components-item.component';
+import { CONNECT_ITEMS_DATA } from './connection.const';
 
 const Connection: React.FC = () => {
+  const items = CONNECT_ITEMS_DATA.map((item, i) => (
+    <ComponentsItem key={i} {...item} />
+  ));
   return (
-    <section className={css.connectionSection}>
-      <div>
-        <h2>
-          We connect our customers with the best, and help them keep up-and stay
-          open.
-        </h2>
-        <ul>
-          <li>We connect our customers with the best.</li>
-          <li>Advisor success customer launch party.</li>
-          <li>Business-to-consumer long tail.</li>
-        </ul>
-        <Button>Start now</Button>
-      </div>
-      <div>
-        <h2>
-          We connect our customers with the best, and help them keep up-and stay
-          open.
-        </h2>
-        <ul>
-          <li>We connect our customers with the best.</li>
-          <li>Advisor success customer launch party.</li>
-          <li>Business-to-consumer long tail.</li>
-        </ul>
-        <Button>Start now</Button>
-      </div>
+    <section className={css.section}>
+      <ul className={css.list}>{items}</ul>
     </section>
   );
 };
