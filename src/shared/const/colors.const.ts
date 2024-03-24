@@ -8,4 +8,5 @@ export const COLORS = Object.freeze({
   DARK_SKY_BLUE: '#8FB6D5',
   SONIK_SILVER: '#777777',
   BLACK: '#000000',
+  SILVER_SAND: '#C4C4C4',
 });
