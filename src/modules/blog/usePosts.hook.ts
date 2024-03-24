@@ -14,7 +14,7 @@ export const usePosts = <T>(initialValue: Array<T>): IUsePost<T> => {
   const [page, setPage] = useState<number>(0);
   const [isLoading, setIsloading] = useState<boolean>(false);
 
-  const getData = async (): Promise<void> => {
+  const getData = useCallback(async (): Promise<void> => {
     setIsloading(true);
     try {
       const { data } = await blogHttpService.getPosts<T>(page);
@@ -24,13 +24,13 @@ export const usePosts = <T>(initialValue: Array<T>): IUsePost<T> => {
     } finally {
       setIsloading(false);
     }
-  };
+  }, [page]);
 
   useEffect(() => {
     if (page) {
       getData();
     }
-  }, [page]);
+  }, [page, getData]);
 
   const nextPage = useCallback((): void => {
     setPage(p => p + 1);

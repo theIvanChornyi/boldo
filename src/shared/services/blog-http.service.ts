@@ -1,8 +1,8 @@
 import axios, { Axios, AxiosResponse } from 'axios';
 import { BLOG } from '../const/back-end-routes.const';
 
-class BlogHttpService {
-  private readonly axios: Axios;
+export class BlogHttpService {
+  public readonly axios: Axios;
   private readonly API_KEY: string;
   constructor() {
     this.API_KEY = process.env.REACT_APP_API_KEY ?? '';
@@ -21,4 +21,5 @@ class BlogHttpService {
   }
 }
 
-export default new BlogHttpService();
+const blogService = new BlogHttpService();
+export default blogService;

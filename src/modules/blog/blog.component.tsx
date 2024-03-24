@@ -20,7 +20,7 @@ const Blog: React.FC = () => {
 
   const items = useMemo(
     () => posts.map(post => <BlogListItem {...post} key={post.id} />),
-    [posts.length]
+    [posts]
   );
 
   const defaultclassNames = {

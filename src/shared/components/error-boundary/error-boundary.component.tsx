@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import React, { Component } from 'react';
+import ErrorElem from '../error/error.component';
 
 type Props = {
   children?: ReactNode;
@@ -22,7 +23,7 @@ class ErrorBoundary extends Component<Props, IState> {
 
   public render(): React.ReactNode {
     if (this.state.hasError) {
-      return <h1>Sorry.. there was an error</h1>;
+      return <ErrorElem />;
     }
 
     return this.props.children;

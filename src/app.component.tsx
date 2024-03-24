@@ -20,7 +20,9 @@ function App() {
       <ErrorBoundary>
         <Blog />
       </ErrorBoundary>
-      <Subscription />
+      <ErrorBoundary>
+        <Subscription />
+      </ErrorBoundary>
       <Footer />
 
       <ToastContainer />
