@@ -32,8 +32,8 @@ export const button = (variant: VARIANT, size: SIZE): string => {
     border-radius: ${borderRadius}px;
     border: 2px solid ${borderColor};
 
-    &:hover,
-    &:focus {
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
       transform: scale(1.03);
     }

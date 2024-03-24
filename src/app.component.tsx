@@ -6,6 +6,8 @@ import Support from './modules/support/support.component';
 import Blog from './modules/blog/blog.component';
 import Subscription from './modules/subscription/subscription.component';
 import Footer from './modules/footer/footer.component';
+import ErrorBoundary from './shared/components/error-boundary/error-boundary.component';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -15,9 +17,13 @@ function App() {
       <Connection />
       <Feedback />
       <Support />
-      <Blog />
+      <ErrorBoundary>
+        <Blog />
+      </ErrorBoundary>
       <Subscription />
       <Footer />
+
+      <ToastContainer />
     </>
   );
 }
