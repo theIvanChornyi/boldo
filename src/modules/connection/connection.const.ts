@@ -4,8 +4,8 @@ import { IConnectItem, ITab } from './connection.types';
 import { chartLeft, chartRight } from './connection.styles';
 import item1pic from '../../assets/images/connect-item-1.jpg';
 import item2pic from '../../assets/images/connect-item-2.jpg';
-import { ReactComponent as Chart1 } from '../../assets/images/connect-chart-1.svg';
-import { ReactComponent as Chart2 } from '../../assets/images/connect-chart-2.svg';
+import { ReactComponent as Chart1 } from '../../assets/icons/connect-chart-1.svg';
+import { ReactComponent as Chart2 } from '../../assets/icons/connect-chart-2.svg';
 
 import { ReactComponent as Feather } from '../../assets/icons/feather.svg';
 import { ReactComponent as Eye } from '../../assets/icons/eye.svg';

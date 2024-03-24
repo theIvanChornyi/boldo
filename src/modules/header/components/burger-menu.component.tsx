@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+
 import Button from '../../../shared/components/button/button.component';
 import { SIZE, VARIANT } from '../../../shared/components/button/button.types';
 import * as css from '../header.styles';
@@ -8,6 +10,9 @@ interface IProps {
 }
 
 const Burger: React.FC<IProps> = ({ isOpen }) => {
+  const signIn = (): void => {
+    toast.success('Successfully signed in');
+  };
   return (
     <nav className={css.burgerNavigation(isOpen)}>
       <ul className={css.navigationLinksList}>
@@ -16,7 +21,7 @@ const Burger: React.FC<IProps> = ({ isOpen }) => {
         <NavItem title="About" path="ABOUT" />
       </ul>
 
-      <Button variant={VARIANT.LIGHT} size={SIZE.MEDIUM}>
+      <Button variant={VARIANT.LIGHT} size={SIZE.MEDIUM} onClick={signIn}>
         Log In
       </Button>
     </nav>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 import Button from '../../shared/components/button/button.component';
 import CompanyLogo from '../../shared/components/company-logo/company-logo.component';
@@ -17,6 +18,10 @@ const Header: React.FC = () => {
     setOpen(p => !p);
   };
 
+  const signIn = (): void => {
+    toast.success('Successfully signed in');
+  };
+
   return (
     <header className={css.header}>
       <CompanyLogo path={ROUTES.HOME} />
@@ -27,7 +32,7 @@ const Header: React.FC = () => {
           <NavItem title="About" path="ABOUT" />
         </ul>
 
-        <Button variant={VARIANT.LIGHT} size={SIZE.MEDIUM}>
+        <Button variant={VARIANT.LIGHT} size={SIZE.MEDIUM} onClick={signIn}>
           Log In
         </Button>
       </nav>

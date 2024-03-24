@@ -1,7 +1,10 @@
 import { css } from '@emotion/css';
 import { COLORS } from '../../shared/const/colors.const';
 import { OPEN_SANS_SEMI_BOLD } from '../../shared/const/fonts.const';
-import { tabletMedia } from '../../shared/styles/screen-breackpoint-media.styles';
+import {
+  laptopMedia,
+  tabletMedia,
+} from '../../shared/styles/screen-breackpoint-media.styles';
 
 // #LAYOUT
 export const section = css`
@@ -12,7 +15,7 @@ export const section = css`
   overflow: hidden;
 
   ${tabletMedia`
-    padding: 60px 30px 226px;
+    padding: 60px 30px 360px;
   `}
 `;
 
@@ -24,12 +27,16 @@ export const list = css`
 
 export const item = css`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 150px;
+  row-gap: 20px;
   &:nth-child(odd) {
-    flex-flow: row-reverse;
+    flex-direction: row-reverse;
   }
+
+  /* ${laptopMedia`
+    flex-flow: row;`} */
 `;
 
 export const imageWrapper = css`
@@ -48,8 +55,9 @@ export const content = css`
 // #FIRS ITEM
 export const chartLeft = css`
   position: absolute;
-  top: 194px;
-  left: 154px;
+  bottom: -10px;
+  left: 65px;
+  width: 100%;
 `;
 
 export const advantageContainer = css`
@@ -82,6 +90,7 @@ export const chartRight = css`
   position: absolute;
   top: 276px;
   left: 16px;
+  width: 100%;
 `;
 
 export const tabsContainer = css`

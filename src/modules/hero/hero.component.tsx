@@ -2,22 +2,18 @@ import Button from '../../shared/components/button/button.component';
 import Slider from './components/hero-slider.component';
 import { SIZE, VARIANT } from '../../shared/components/button/button.types';
 
-import heroFragment1 from '../../assets/images/hero-frame-1.svg';
-import heroFragment2 from '../../assets/images/hero-frame-2.svg';
-import heroFragment3 from '../../assets/images/hero-frame-3.svg';
+import heroFragment1 from '../../assets/icons/hero-frame-1.svg';
+import heroFragment2 from '../../assets/icons/hero-frame-2.svg';
+import heroFragment3 from '../../assets/icons/hero-frame-3.svg';
 
 import * as css from './hero.styles';
 import Dialog from '../../shared/components/dialog/dialog.component';
 import { useState } from 'react';
-import ErrorElem from '../../shared/components/error/error.component';
 import Chart from '../../shared/components/chart/chart.component';
 
 const Hero: React.FC = () => {
-  const [isOpenTemplate, setIsOpenTemplate] = useState(false);
   const [isOpenExplore, setIsOpenExplore] = useState(false);
 
-  const openTemplateDialog = () => setIsOpenTemplate(true);
-  const closeTemplateDialog = () => setIsOpenTemplate(false);
   const openExploreDialog = () => setIsOpenExplore(true);
   const closeExploreDialog = () => setIsOpenExplore(false);
 
@@ -39,7 +35,7 @@ const Hero: React.FC = () => {
             <Button
               size={SIZE.LARGE}
               variant={VARIANT.DEFAULT}
-              onClick={openTemplateDialog}
+              onClick={openExploreDialog}
             >
               Buy template
             </Button>
@@ -60,9 +56,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <Slider className={css.slider} />
-      <Dialog isOpen={isOpenTemplate} close={closeTemplateDialog}>
-        <ErrorElem />
-      </Dialog>
+
       <Dialog isOpen={isOpenExplore} close={closeExploreDialog}>
         <div className={css.chartContainer}>
           <Chart />

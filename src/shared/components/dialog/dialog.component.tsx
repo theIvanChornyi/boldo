@@ -58,10 +58,11 @@ const Dialog: React.FC<IProps> = ({ children, close, isOpen }) => {
     >
       <div onClick={onClick} className={css.backdrop} ref={nodeRef}>
         <div className={css.dialog}>
+          {children}
+
           <button type="button" onClick={close} className={css.closeBtn}>
             X
           </button>
-          {children}
         </div>
       </div>
     </CSSTransition>,

@@ -74,7 +74,7 @@ export const closeBtn = css`
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-
+  z-index: 300px;
   position: absolute;
 
   right: -16px;

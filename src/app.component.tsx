@@ -10,13 +10,14 @@ import Subscription from './modules/subscription/subscription.component';
 import Footer from './modules/footer/footer.component';
 import ErrorBoundary from './shared/components/error-boundary/error-boundary.component';
 import { ToastContainer } from 'react-toastify';
+import { ROUTES } from './shared/const/routes.const';
 
 import * as css from './app.styles';
 
 function App() {
   return (
     <>
-      <Section className={css.heroSection}>
+      <Section className={css.heroSection} id={ROUTES.HERO}>
         <Header />
         <Hero />
       </Section>
@@ -34,7 +35,7 @@ function App() {
       </ErrorBoundary>
       <Footer />
 
-      <ToastContainer />
+      <ToastContainer autoClose={1500} />
     </>
   );
 }
