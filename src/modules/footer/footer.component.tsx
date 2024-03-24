@@ -1,61 +1,81 @@
-import { ReactComponent as Logo } from '../../assets/icons/boldo-logo.svg';
+import CompanyLogo from '../../shared/components/company-logo/company-logo.component';
+import { ROUTES } from '../../shared/const/routes.const';
+import { classBuilder } from '../../shared/utils/class-builder.util';
 import * as css from './footer.styles';
 
 const Footer: React.FC = () => {
   return (
     <footer className={css.footer}>
-      <div>
-        <a href="#4">
-          <Logo />
-          <span>Boldo</span>
-        </a>
-        <p>
+      <div className={css.info}>
+        <CompanyLogo className={css.logo} path={ROUTES.HOME} />
+        <p className={classBuilder([css.text, css.about])}>
           Social media validation business model canvas graphical user interface
           launch party creative facebook iPad twitter.
         </p>
-        <p>All rights reserved.</p>
+        <p className={classBuilder([css.text, css.rights])}>
+          All rights reserved.
+        </p>
       </div>
       <nav>
-        <ul>
+        <ul className={css.navContainer}>
           <li>
-            <h3>Landings</h3>
-            <ul>
-              <li>
-                <a href="#4">Home</a>
+            <h3 className={css.navTitle}>Landings</h3>
+            <ul className={css.navList}>
+              <li className={css.navLink}>
+                <a className={css.navLink} href="#4">
+                  Home
+                </a>
               </li>
-              <li>
-                <a href="#4">Products</a>
+              <li className={css.navLink}>
+                <a className={css.navLink} href="#4">
+                  Products
+                </a>
               </li>
-              <li>
-                <a href="#4">Services</a>
+              <li className={css.navLink}>
+                <a className={css.navLink} href="#4">
+                  Services
+                </a>
               </li>
             </ul>
           </li>
           <li>
-            <h3>Company</h3>
-            <ul>
-              <li>
-                <a href="#4">Home</a>
+            <h3 className={css.navTitle}>Company</h3>
+            <ul className={css.navList}>
+              <li className={css.navItem}>
+                <a className={css.navLink} href="#4">
+                  Home
+                </a>
               </li>
-              <li>
-                <a href="#4">Careers</a>
+              <li className={css.navItem}>
+                <a className={css.navLink} href="#4">
+                  Careers
+                </a>
+                <span>Hiring!</span>
               </li>
-              <li>
-                <a href="#4">Services</a>
+              <li className={css.navItem}>
+                <a className={css.navLink} href="#4">
+                  Services
+                </a>
               </li>
             </ul>
           </li>
           <li>
-            <h3>Resources</h3>
-            <ul>
-              <li>
-                <a href="#4">Blog</a>
+            <h3 className={css.navTitle}>Resources</h3>
+            <ul className={css.navList}>
+              <li className={css.navLink}>
+                <a className={css.navLink} href="#4">
+                  Blog
+                </a>
               </li>
-              <li>
-                <a href="#4">Products</a>
+              <li className={css.navLink}>
+                <a className={css.navLink} href="#4">
+                  Products
+                </a>
               </li>
-              <li>
-                <a href="#4">Services</a>
+              <li className={css.navLink}>
+                <a className={css.navLink} href="#4">
+                  Services
+                </a>
               </li>
             </ul>
           </li>

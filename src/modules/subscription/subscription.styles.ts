@@ -4,6 +4,8 @@ import { MANROPE_REGULAR } from '../../shared/const/fonts.const';
 
 export const section = css`
   padding: 90px 100px;
+  max-width: 1400px;
+  margin: 0 auto;
 `;
 
 export const contentWrapper = css`

@@ -41,6 +41,7 @@ export const userInfo = css`
 
 export const itemTitle = css`
   font-weight: 700;
+  text-transform: capitalize;
   color: ${COLORS.OXFORD_BLUE};
 `;
 export const itemData = css`
@@ -68,16 +69,6 @@ export const avatar = css`
 
 export const buttonWrapper = css`
   margin-top: 84px;
-`;
-
-export const cover = css`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 `;
 
 export interface ITextStyleProps {
