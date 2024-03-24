@@ -1,10 +1,10 @@
 import { css, keyframes } from '@emotion/css';
 
 const moveX = keyframes`
-  from { left: 0; } to { left: calc(100% - 162px); }
+  from { left: 0; } to { left: calc(100% - 146px); }
 `;
 const moveY = keyframes`
-  from { top: 0; } to { top: calc(100% - 45px); }
+  from { top: 0; } to { top: calc(100% - 38px); }
 `;
 
 export const box = css`

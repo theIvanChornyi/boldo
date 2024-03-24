@@ -10,8 +10,19 @@ import heroFragment2 from '../../assets/images/hero-frame-2.svg';
 import heroFragment3 from '../../assets/images/hero-frame-3.svg';
 
 import * as css from './hero.styles';
+import Dialog from '../../shared/components/dialog/dialog.component';
+import { useState } from 'react';
+import ErrorElem from '../../shared/components/error/error.component';
 
 const Hero: React.FC = () => {
+  const [isOpenTemplate, setIsOpenTemplate] = useState(false);
+  const [isOpenExplore, setIsOpenExplore] = useState(false);
+
+  const openTemplateDialog = () => setIsOpenTemplate(true);
+  const closeTemplateDialog = () => setIsOpenTemplate(false);
+  const openExploreDialog = () => setIsOpenExplore(true);
+  const closeExploreDialog = () => setIsOpenExplore(false);
+
   return (
     <Section id={ROUTES.HERO} className={css.section}>
       <Header />
@@ -28,10 +39,18 @@ const Hero: React.FC = () => {
             non-disclosure.
           </p>
           <div className={css.buttonsWrapper}>
-            <Button size={SIZE.LARGE} variant={VARIANT.DEFAULT}>
+            <Button
+              size={SIZE.LARGE}
+              variant={VARIANT.DEFAULT}
+              onClick={openTemplateDialog}
+            >
               Buy template
             </Button>
-            <Button size={SIZE.LARGE} variant={VARIANT.TRANSPARENT_LIGHT}>
+            <Button
+              size={SIZE.LARGE}
+              onClick={openExploreDialog}
+              variant={VARIANT.TRANSPARENT_LIGHT}
+            >
               Explore
             </Button>
           </div>
@@ -44,6 +63,12 @@ const Hero: React.FC = () => {
         </div>
       </div>
       <Slider className={css.slider} />
+      <Dialog isOpen={isOpenTemplate} close={closeTemplateDialog}>
+        <ErrorElem />
+      </Dialog>
+      <Dialog isOpen={isOpenExplore} close={closeExploreDialog}>
+        <div>Explore</div>
+      </Dialog>
     </Section>
   );
 };

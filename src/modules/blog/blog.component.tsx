@@ -23,16 +23,6 @@ const Blog: React.FC = () => {
     [posts]
   );
 
-  const defaultclassNames = {
-    enterActive: css.enterActive,
-    enterDone: css.enterDone({
-      duration: 200,
-    }),
-    exitActive: css.exitActive({
-      duration: 200,
-    }),
-    exitDone: css.exitDone,
-  };
   return (
     <section className={css.section}>
       <SectionHeader
@@ -45,7 +35,7 @@ const Blog: React.FC = () => {
         in={isLoading}
         timeout={200}
         unmountOnExit={false}
-        classNames={defaultclassNames}
+        classNames={css.defaultclassNames}
       >
         <ul className={css.list} ref={nodeRef}>
           {items}

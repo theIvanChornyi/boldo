@@ -96,3 +96,14 @@ export const exitActive = ({ duration }: ITextStyleProps): string => {
     transition: all ${duration}ms;
   `;
 };
+
+export const defaultclassNames = {
+  enterActive: enterActive,
+  enterDone: enterDone({
+    duration: 200,
+  }),
+  exitActive: exitActive({
+    duration: 200,
+  }),
+  exitDone: exitDone,
+};
