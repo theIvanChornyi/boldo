@@ -4,6 +4,8 @@ import { OPEN_SANS_SEMI_BOLD } from '../../shared/const/fonts.const';
 import {
   laptopMedia,
   tabletMedia,
+  smalTabletMedia,
+  mobileMedia,
 } from '../../shared/styles/screen-breackpoint-media.styles';
 
 // #LAYOUT
@@ -15,7 +17,7 @@ export const section = css`
   overflow: hidden;
 
   ${tabletMedia`
-    padding: 60px 30px 360px;
+    padding: 60px 30px;
   `}
 `;
 
@@ -23,6 +25,10 @@ export const list = css`
   display: flex;
   flex-direction: column;
   row-gap: 120px;
+
+  ${mobileMedia`
+    row-gap: 0;
+  `}
 `;
 
 export const item = css`
@@ -34,9 +40,6 @@ export const item = css`
   &:nth-child(odd) {
     flex-direction: row-reverse;
   }
-
-  /* ${laptopMedia`
-    flex-flow: row;`} */
 `;
 
 export const imageWrapper = css`
@@ -55,9 +58,21 @@ export const content = css`
 // #FIRS ITEM
 export const chartLeft = css`
   position: absolute;
-  bottom: -10px;
-  left: 65px;
+  bottom: 17px;
+  left: 13%;
   width: 100%;
+
+  ${laptopMedia`
+  bottom: -27%;
+  `}
+
+  ${smalTabletMedia`
+  bottom: -34%;
+  `}
+
+  ${mobileMedia`
+    position: static;
+  `}
 `;
 
 export const advantageContainer = css`
@@ -91,6 +106,14 @@ export const chartRight = css`
   top: 276px;
   left: 16px;
   width: 100%;
+
+  ${smalTabletMedia`
+  bottom: -34%;
+  `}
+
+  ${mobileMedia`
+    position: static;
+  `}
 `;
 
 export const tabsContainer = css`

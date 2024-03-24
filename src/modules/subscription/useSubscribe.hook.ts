@@ -15,7 +15,7 @@ export const useSubscribe = (): IUseSubscribe => {
     setIsloading(true);
     try {
       await emailHttpService.subscribe(email);
-      toast.success('Now you are subscriber!');
+      toast.success('You are subscriber now !');
     } catch (error) {
       toast.error('Something went wrong');
     } finally {
