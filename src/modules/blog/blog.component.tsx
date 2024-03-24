@@ -12,6 +12,7 @@ import { INITIAL_POSTS } from './blog.const';
 
 import * as css from './blog.styles';
 import { usePosts } from './usePosts.hook';
+import { ROUTES } from '../../shared/const/routes.const';
 
 const Blog: React.FC = () => {
   const nodeRef = useRef(null);
@@ -24,7 +25,7 @@ const Blog: React.FC = () => {
   );
 
   return (
-    <section className={css.section}>
+    <section className={css.section} id={ROUTES.ABOUT}>
       <SectionHeader
         subtitle="Our Blog"
         title="Value proposition accelerator product management venture"

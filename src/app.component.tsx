@@ -1,3 +1,5 @@
+import Section from './shared/components/section/section.component';
+import Header from './modules/header/header.component';
 import Hero from './modules/hero/hero.component';
 import Services from './modules/services/services.component';
 import Connection from './modules/connection/connection.component';
@@ -9,13 +11,20 @@ import Footer from './modules/footer/footer.component';
 import ErrorBoundary from './shared/components/error-boundary/error-boundary.component';
 import { ToastContainer } from 'react-toastify';
 
+import * as css from './app.styles';
+
 function App() {
   return (
     <>
-      <Hero />
+      <Section className={css.heroSection}>
+        <Header />
+        <Hero />
+      </Section>
       <Services />
       <Connection />
-      <Feedback />
+      <Section className={css.feedbackSection}>
+        <Feedback />
+      </Section>
       <Support />
       <ErrorBoundary>
         <Blog />

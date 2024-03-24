@@ -58,8 +58,8 @@ export const dialog = css`
   left: 50%;
   top: 50%;
 
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
 
   maxheight: 80vh;
 

@@ -15,7 +15,7 @@ const ComponentsItem: React.FC<IProps> = ({
     <li className={css.item}>
       <Content />
       <div className={css.imageWrapper}>
-        <ImageContainer src={picPath} loadingType="lazy" alt={picDescription} />
+        <ImageContainer src={picPath} alt={picDescription} />
         <Chart className={chartClassName} />
       </div>
     </li>

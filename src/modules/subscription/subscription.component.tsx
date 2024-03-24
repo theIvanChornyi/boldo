@@ -9,6 +9,7 @@ import { validationSchema } from './subscription.validation';
 import { SIZE, VARIANT } from '../../shared/components/button/button.types';
 import { useSubscribe } from './useSubscribe.hook';
 import Loader from '../../shared/components/loader/loader.component';
+import { ROUTES } from '../../shared/const/routes.const';
 
 const Subscription: React.FC = () => {
   const { handleSubscribe, isLoading } = useSubscribe();
@@ -25,7 +26,7 @@ const Subscription: React.FC = () => {
   });
 
   return (
-    <section className={css.section}>
+    <section className={css.section} id={ROUTES.SUBSCRIBE}>
       <div className={css.contentWrapper}>
         <h2 className={css.title}>
           An enterprise template to ramp <br /> up your company website

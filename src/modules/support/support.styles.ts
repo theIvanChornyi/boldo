@@ -4,6 +4,7 @@ import bg from '../../assets/backgrounds/support.png';
 import bgRetina from '../../assets/backgrounds/support@2x.png';
 import { COLORS } from '../../shared/const/colors.const';
 import { retinaRule } from '../../shared/styles/retina-media.styles';
+import { tabletMedia } from '../../shared/styles/screen-breackpoint-media.styles';
 
 export const section = css`
   display: flex;
@@ -16,6 +17,9 @@ export const section = css`
   background-repeat: no-repeat;
   background-size: clamp(320px, 78.8%, 1100px) auto;
   background-position: top 124px center;
+  ${tabletMedia`
+    padding: 400px 30px 30px;
+  `}
 
   ${retinaRule`
     background-image: url(${bgRetina});

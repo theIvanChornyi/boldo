@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import * as css from './dialog.styles';
@@ -17,10 +17,20 @@ interface IProps {
 const Dialog: React.FC<IProps> = ({ children, close, isOpen }) => {
   const nodeRef = useRef(null);
 
+  const keyClose = useCallback(
+    (e: KeyboardEvent): void => {
+      if (e.keyCode === 27) {
+        close();
+      }
+    },
+    [close]
+  );
+
   useEffect(() => {
     if (isOpen) {
       if (document.activeElement instanceof HTMLElement) {
         document.activeElement.blur();
+        window.addEventListener('keydown', keyClose);
       }
       document.body.style.overflowY = 'hidden';
     } else {
@@ -28,8 +38,9 @@ const Dialog: React.FC<IProps> = ({ children, close, isOpen }) => {
     }
     return () => {
       document.body.style.overflowY = 'auto';
+      window.removeEventListener('keydown', keyClose);
     };
-  }, [isOpen]);
+  }, [isOpen, keyClose]);
 
   const onClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {

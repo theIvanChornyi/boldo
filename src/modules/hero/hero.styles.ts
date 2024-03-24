@@ -1,31 +1,25 @@
 import { css } from '@emotion/css';
 import { COLORS } from '../../shared/const/colors.const';
 import { MANROPE_REGULAR } from '../../shared/const/fonts.const';
-
-export const section = css`
-  position: relative;
-  padding: 55px 100px;
-
-  background-color: ${COLORS.OXFORD_BLUE};
-
-  overflow: hidden;
-  &::before {
-    content: '';
-    position: absolute;
-    top: -789px;
-    right: -670px;
-    width: 1293px;
-    height: 1293px;
-    border-radius: 50%;
-    background-color: ${COLORS.INDIGO};
-  }
-`;
+import {
+  mobileMedia,
+  tabletMedia,
+} from '../../shared/styles/screen-breackpoint-media.styles';
 
 export const contentWrapper = css`
+  max-width: 1400px;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
   justify-content: space-between;
-  margin-top: 64px;
+  padding: 54px 100px 56px;
+  margin: 0 auto 0;
+
+  ${tabletMedia`
+    justify-content: center;
+    padding: 20px 30px 20px;
+  `}
 `;
 
 export const imageContainer = css`
@@ -33,12 +27,17 @@ export const imageContainer = css`
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr 1fr;
   align-content: space-between;
-  opacity: 1;
+  row-gap: 26px;
 
   & img {
     border-radius: 15px;
+    display: block;
+
+    ${tabletMedia`
+        width:100%;
+    `}
   }
 
   & :first-child {
@@ -65,6 +64,9 @@ export const imageContainer = css`
 export const main = css`
   max-width: 567px;
   padding: 56.5px 0;
+  ${tabletMedia`
+    padding: 0;
+  `}
 `;
 
 export const mainTitle = css`
@@ -72,6 +74,15 @@ export const mainTitle = css`
   color: ${COLORS.WHITE};
   font-size: 48px;
   line-height: 1.5;
+
+  ${tabletMedia`
+    font-size: 36px;
+    text-align: center;
+  `}
+
+  ${mobileMedia`
+    font-size: 24px;
+  `}
 `;
 
 export const text = css`
@@ -83,13 +94,19 @@ export const text = css`
 
 export const buttonsWrapper = css`
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 40px;
+  ${tabletMedia`
+    justify-content: center;
+  `}
 `;
 
 // #SLIDER
 export const slider = css`
-  margin-top: 56px;
+  max-width: 1200px;
+
+  margin: 0 auto 0;
   padding: 0 6px !important;
   position: relative;
 
@@ -127,4 +144,12 @@ export const slider = css`
 export const slide = css`
   width: 145px !important;
   height: 42px !important;
+`;
+
+export const chartContainer = css`
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: ${COLORS.WHITE};
+  border-radius: 12px;
 `;

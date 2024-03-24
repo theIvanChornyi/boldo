@@ -7,7 +7,7 @@ interface IProps extends React.HTMLAttributes<HTMLTableSectionElement> {
     | Array<React.JSX.Element>
     | string
     | Array<string | React.JSX.Element>;
-  id: string;
+  id?: string;
   className?: string;
 }
 

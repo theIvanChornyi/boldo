@@ -21,6 +21,7 @@ export const button = (variant: VARIANT, size: SIZE): string => {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 
     padding: ${padding};
 

@@ -17,9 +17,10 @@ const BlogListItem: React.FC<IProps> = ({
     <li>
       <article className={css.item}>
         <ImageContainer
+          width={300}
+          height={225}
           component="header"
           src={picture}
-          loadingType="lazy"
           alt={title}
           className={css.picture}
         />

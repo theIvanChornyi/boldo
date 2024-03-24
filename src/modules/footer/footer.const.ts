@@ -1,3 +1,4 @@
+import { ROUTES } from '../../shared/const/routes.const';
 import { IFoterNavList } from './footer.types';
 
 export const NAV_LIST_LANDINGS: IFoterNavList = {
@@ -5,15 +6,15 @@ export const NAV_LIST_LANDINGS: IFoterNavList = {
   items: [
     {
       name: 'Home',
-      path: '#Home',
+      path: `#${ROUTES.HERO}`,
     },
     {
       name: 'Products',
-      path: '#Products',
+      path: `#${ROUTES.PRODUCT}`,
     },
     {
       name: 'Services',
-      path: '#Services',
+      path: `#${ROUTES.SERVICES}`,
     },
   ],
 };
@@ -23,16 +24,16 @@ export const NAV_LIST_COMPANY: IFoterNavList = {
   items: [
     {
       name: 'Home',
-      path: '#Home',
+      path: `#${ROUTES.HERO}`,
     },
     {
       name: 'Careers',
-      path: '#Careers',
+      path: `#${ROUTES.SUBSCRIBE}`,
       note: 'Hiring!',
     },
     {
       name: 'Services',
-      path: '#Services',
+      path: `#${ROUTES.SERVICES}`,
     },
   ],
 };
@@ -42,15 +43,15 @@ export const NAV_LIST_RESOURCES: IFoterNavList = {
   items: [
     {
       name: 'Blog',
-      path: '#Blog',
+      path: `#${ROUTES.ABOUT}`,
     },
     {
       name: 'Products',
-      path: '#Products',
+      path: `#${ROUTES.PRODUCT}`,
     },
     {
       name: 'Services',
-      path: '#Services',
+      path: `#${ROUTES.SERVICES}`,
     },
   ],
 };

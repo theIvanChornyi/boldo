@@ -1,11 +1,19 @@
 import { css } from '@emotion/css';
 import { COLORS } from '../../shared/const/colors.const';
 import { OPEN_SANS_BOLD } from '../../shared/const/fonts.const';
+import { tabletMedia } from '../../shared/styles/screen-breackpoint-media.styles';
 
 export const section = css`
+  max-width: 1400px;
   position: relative;
-  background-color: ${COLORS.OXFORD_BLUE};
   padding: 96px 150px;
+  margin: 0 auto;
+
+  background-color: ${COLORS.OXFORD_BLUE};
+
+  ${tabletMedia`
+    padding: 96px 30px;
+  `}
 `;
 
 export const title = css`
@@ -23,6 +31,10 @@ export const buttonsWrapper = css`
   right: 100px;
   display: flex;
   column-gap: 28px;
+
+  ${tabletMedia`
+    display: none;
+  `}
 `;
 
 export const sliderButton = (isMirror: boolean = false): string => {
@@ -50,6 +62,10 @@ export const sliderButton = (isMirror: boolean = false): string => {
 export const slider = css`
   max-width: 1100px;
   margin: 72px auto 0;
+
+  ${tabletMedia`
+    margin-top: 40px;
+  `}
 `;
 
 // #SLIDE

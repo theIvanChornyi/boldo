@@ -1,4 +1,5 @@
 import SectionHeader from '../../shared/components/section-header/section-header.component';
+import { ROUTES } from '../../shared/const/routes.const';
 import ServiceItem from './components/service-item.component';
 import { SERVICES_ITEMS_DATA } from './services.const';
 import * as css from './services.styles';
@@ -9,7 +10,7 @@ const Services: React.FC = () => {
   ));
 
   return (
-    <section className={css.section}>
+    <section className={css.section} id={ROUTES.SERVICES}>
       <SectionHeader
         title="Handshake infographic mass market crowdfunding iteration."
         subtitle="Our Services"

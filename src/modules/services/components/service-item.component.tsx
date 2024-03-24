@@ -17,7 +17,12 @@ const ServiceItem: React.FC<IProps> = ({
       <ImageContainer src={picPath} loadingType="lazy" alt={picDescription} />
       <span className={css.itemName}>{name}</span>
       <p className={css.itemDescription}>{description}</p>
-      <a className={css.itemLink} href={href}>
+      <a
+        className={css.itemLink}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Explore page {<Arrow />}
       </a>
     </li>

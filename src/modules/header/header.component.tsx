@@ -1,12 +1,22 @@
+import { useState } from 'react';
+
 import Button from '../../shared/components/button/button.component';
 import CompanyLogo from '../../shared/components/company-logo/company-logo.component';
 import NavItem from './components/header-nav-item.component';
+import BurgerMenu from './components/burger-menu.component';
+import BurgerButton from './components/burger-button.component';
 
 import { SIZE, VARIANT } from '../../shared/components/button/button.types';
 import { ROUTES } from '../../shared/const/routes.const';
 import * as css from './header.styles';
 
 const Header: React.FC = () => {
+  const [open, setOpen] = useState(false);
+
+  const toogleBurger = (): void => {
+    setOpen(p => !p);
+  };
+
   return (
     <header className={css.header}>
       <CompanyLogo path={ROUTES.HOME} />
@@ -16,10 +26,13 @@ const Header: React.FC = () => {
           <NavItem title="Services" path="SERVICES" />
           <NavItem title="About" path="ABOUT" />
         </ul>
+
         <Button variant={VARIANT.LIGHT} size={SIZE.MEDIUM}>
           Log In
         </Button>
       </nav>
+      <BurgerMenu isOpen={open} />
+      <BurgerButton toogleBurger={toogleBurger} isOpen={open} />
     </header>
   );
 };

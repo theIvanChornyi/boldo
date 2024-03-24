@@ -1,10 +1,19 @@
 import { css } from '@emotion/css';
 import { COLORS } from '../../shared/const/colors.const';
 import { OPEN_SANS_SEMI_BOLD } from '../../shared/const/fonts.const';
+import { tabletMedia } from '../../shared/styles/screen-breackpoint-media.styles';
 
 // #LAYOUT
 export const section = css`
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 120px 107px 226px;
+
+  overflow: hidden;
+
+  ${tabletMedia`
+    padding: 60px 30px 226px;
+  `}
 `;
 
 export const list = css`
@@ -16,6 +25,7 @@ export const list = css`
 export const item = css`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   column-gap: 150px;
   &:nth-child(odd) {
     flex-flow: row-reverse;
@@ -24,6 +34,11 @@ export const item = css`
 
 export const imageWrapper = css`
   position: relative;
+  & img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
 `;
 
 export const content = css`

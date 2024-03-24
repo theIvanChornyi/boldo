@@ -4,4 +4,5 @@ export const ROUTES = Object.freeze({
   PRODUCT: 'Product',
   SERVICES: 'Services',
   ABOUT: 'About',
+  SUBSCRIBE: 'Subscribe',
 });

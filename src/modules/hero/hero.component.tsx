@@ -1,9 +1,6 @@
 import Button from '../../shared/components/button/button.component';
 import Slider from './components/hero-slider.component';
-import Section from '../../shared/components/section/section.component';
-import Header from '../header/header.component';
 import { SIZE, VARIANT } from '../../shared/components/button/button.types';
-import { ROUTES } from '../../shared/const/routes.const';
 
 import heroFragment1 from '../../assets/images/hero-frame-1.svg';
 import heroFragment2 from '../../assets/images/hero-frame-2.svg';
@@ -13,6 +10,7 @@ import * as css from './hero.styles';
 import Dialog from '../../shared/components/dialog/dialog.component';
 import { useState } from 'react';
 import ErrorElem from '../../shared/components/error/error.component';
+import Chart from '../../shared/components/chart/chart.component';
 
 const Hero: React.FC = () => {
   const [isOpenTemplate, setIsOpenTemplate] = useState(false);
@@ -24,8 +22,7 @@ const Hero: React.FC = () => {
   const closeExploreDialog = () => setIsOpenExplore(false);
 
   return (
-    <Section id={ROUTES.HERO} className={css.section}>
-      <Header />
+    <>
       <div className={css.contentWrapper}>
         <main className={css.main}>
           <h1 className={css.mainTitle}>
@@ -67,9 +64,11 @@ const Hero: React.FC = () => {
         <ErrorElem />
       </Dialog>
       <Dialog isOpen={isOpenExplore} close={closeExploreDialog}>
-        <div>Explore</div>
+        <div className={css.chartContainer}>
+          <Chart />
+        </div>
       </Dialog>
-    </Section>
+    </>
   );
 };
 

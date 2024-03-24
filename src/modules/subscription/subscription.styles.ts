@@ -1,11 +1,23 @@
 import { css } from '@emotion/css';
 import { COLORS } from '../../shared/const/colors.const';
 import { MANROPE_REGULAR } from '../../shared/const/fonts.const';
+import {
+  laptopMedia,
+  mobileMedia,
+  tabletMedia,
+} from '../../shared/styles/screen-breackpoint-media.styles';
 
 export const section = css`
   padding: 90px 100px;
   max-width: 1400px;
   margin: 0 auto;
+  ${tabletMedia`
+    padding: 20px 30px;
+  `}
+
+  ${mobileMedia`
+    padding: 20px 0;
+  `}
 `;
 
 export const contentWrapper = css`
@@ -13,6 +25,10 @@ export const contentWrapper = css`
   padding: 72px 242px;
   background-color: ${COLORS.OXFORD_BLUE};
   border-radius: 12px;
+
+  ${laptopMedia`
+    padding: 20px 30px;
+  `}
 
   overflow: hidden;
   &::before {
@@ -36,6 +52,14 @@ export const title = css`
   font-size: 48px;
   line-height: 1.5;
   text-align: center;
+
+  ${laptopMedia`
+    font-size: 36px;
+  `}
+
+  ${tabletMedia`
+    font-size: 24px;
+  `}
 `;
 
 export const form = css`

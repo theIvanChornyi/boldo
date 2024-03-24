@@ -7,6 +7,8 @@ interface IProps<T extends React.ElementType> {
   alt?: string;
   className?: string;
   loadingType?: React.ImgHTMLAttributes<HTMLImageElement>['loading'];
+  width?: number;
+  height?: number;
 }
 
 const ImageContainer: React.FC<IProps<React.ElementType>> = ({
@@ -15,10 +17,19 @@ const ImageContainer: React.FC<IProps<React.ElementType>> = ({
   alt,
   loadingType,
   className,
+  width,
+  height,
 }) => {
   return (
     <ContainerComponent className={classBuilder([css.container, className])}>
-      <img className={css.image} src={src} alt={alt} loading={loadingType} />
+      <img
+        width={width}
+        height={height}
+        className={css.image}
+        src={src}
+        alt={alt}
+        loading={loadingType}
+      />
     </ContainerComponent>
   );
 };

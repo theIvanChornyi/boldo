@@ -1,9 +1,14 @@
 import { css, CSSObject } from '@emotion/css';
 import { COLORS } from '../../shared/const/colors.const';
+import { tabletMedia } from '../../shared/styles/screen-breackpoint-media.styles';
 
 export const section = css`
   padding: 34px 201px;
   text-align: center;
+
+  ${tabletMedia`
+    padding: 20px 30px 20px;
+  `}
 `;
 
 export const list = css`

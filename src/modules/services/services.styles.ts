@@ -4,16 +4,20 @@ import {
   OPEN_SANS_BOLD,
   OPEN_SANS_REGULAR,
 } from '../../shared/const/fonts.const';
+import { tabletMedia } from '../../shared/styles/screen-breackpoint-media.styles';
 
 export const section = css`
   padding: 84px 150px 77px;
+  ${tabletMedia`
+    padding: 20px 30px 20px;
+  `}
 `;
 
 export const servicesList = css`
   display: flex;
   flex-wrap: wrap;
   column-gap: 100px;
-  row-gap: 20px;
+  row-gap: 30px;
   justify-content: center;
 
   margin-top: 80px;

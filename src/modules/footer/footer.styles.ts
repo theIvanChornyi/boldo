@@ -1,14 +1,20 @@
 import { css } from '@emotion/css';
 import { COLORS } from '../../shared/const/colors.const';
+import { tabletMedia } from '../../shared/styles/screen-breackpoint-media.styles';
 
 export const footer = css`
   max-width: 1400px;
   margin: 0 auto;
   padding: 94px 100px 117px;
+
   display: flex;
   column-gap: 180px;
   row-gap: 40px;
   flex-wrap: wrap;
+
+  ${tabletMedia`
+    padding: 20px 30px 20px;
+  `}
 `;
 
 export const logo = css`
@@ -39,6 +45,8 @@ export const navContainer = css`
   display: flex;
   column-gap: 88px;
   row-gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const navTitle = css`

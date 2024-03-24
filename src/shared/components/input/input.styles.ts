@@ -6,7 +6,7 @@ export const inputWrapper = css`
   position: relative;
 `;
 export const input = css`
-  min-width: 370px;
+  min-width: 200px;
   padding: 12px 32px;
 
   ${OPEN_SANS_REGULAR};
@@ -35,5 +35,5 @@ export const errorMessage = css`
   transform: translateX(-50%);
 
   text-align: center;
-  color: ${COLORS.SPIRO_DISCO_BALL};
+  color: ${COLORS.ORIOLES_ORANGE};
 `;
