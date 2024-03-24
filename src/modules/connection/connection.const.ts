@@ -1,5 +1,5 @@
-import ComponentsAdvantage from './components/components-advantage.component';
-import ComponentsTabs from './components/components-tabs.component';
+import ComponentsAdvantage from './components/connection-advantage.component';
+import ComponentsTabs from './components/connection-tabs.component';
 import { IConnectItem, ITab } from './connection.types';
 import { chartLeft, chartRight } from './connection.styles';
 import item1pic from '../../assets/images/connect-item-1.jpg';

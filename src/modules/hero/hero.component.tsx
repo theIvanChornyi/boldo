@@ -1,5 +1,5 @@
 import Button from '../../shared/components/button/button.component';
-import Slider from '../../shared/components/slider/slider.component';
+import Slider from './components/hero-slider.component';
 import Section from '../../shared/components/section/section.component';
 import Header from '../header/header.component';
 import { SIZE, VARIANT } from '../../shared/components/button/button.types';

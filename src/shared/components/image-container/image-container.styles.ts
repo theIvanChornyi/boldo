@@ -7,7 +7,7 @@ export const container = css`
 `;
 
 export const image = css`
-    width:100%
-    height:auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 `;

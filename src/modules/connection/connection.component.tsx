@@ -1,5 +1,5 @@
 import * as css from './connection.styles';
-import ComponentsItem from './components/components-item.component';
+import ComponentsItem from './components/connection-item.component';
 import { CONNECT_ITEMS_DATA } from './connection.const';
 
 const Connection: React.FC = () => {

@@ -6,7 +6,7 @@ import 'swiper/css';
 import { ReactComponent as BoldoSlide } from '../../../assets/icons/boldo.svg';
 import { ReactComponent as PrestoSlide } from '../../../assets/icons/presto.svg';
 
-import * as css from './slider.styles';
+import * as css from '../hero.styles';
 
 interface IProps extends SwiperProps {}
 

@@ -2,6 +2,7 @@ import { css } from '@emotion/css';
 import { COLORS } from '../../shared/const/colors.const';
 import { OPEN_SANS_SEMI_BOLD } from '../../shared/const/fonts.const';
 
+// #LAYOUT
 export const section = css`
   padding: 120px 107px 226px;
 `;
@@ -29,6 +30,7 @@ export const content = css`
   max-width: 500px;
 `;
 
+// #FIRS ITEM
 export const chartLeft = css`
   position: absolute;
   top: 194px;
@@ -60,6 +62,13 @@ export const advantageButton = css`
   margin-top: 72px;
 `;
 
+// #SECOND ITEM
+export const chartRight = css`
+  position: absolute;
+  top: 276px;
+  left: 16px;
+`;
+
 export const tabsContainer = css`
   padding-top: 106px;
 `;
@@ -77,8 +86,8 @@ export const tabItem = (isActive: boolean = false): string => {
     column-gap: 12px;
     width: 100%;
     min-height: 64px;
-
     padding: 20px;
+
     ${OPEN_SANS_SEMI_BOLD};
     color: ${isActive ? COLORS.WHITE : COLORS.BLACK};
 
@@ -86,7 +95,12 @@ export const tabItem = (isActive: boolean = false): string => {
     box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.08);
     border-radius: 4px;
 
-    transition: background-color 200ms linear, color 200ms linear;
+    transition: background-color 200ms linear, color 200ms linear,
+      transform 200ms linear;
+
+    &:hover {
+      transform: scale(1.03);
+    }
   `;
 };
 
@@ -96,9 +110,3 @@ export const tabIcon = (isActive: boolean = false): string => {
     transition: stroke 200ms linear;
   `;
 };
-
-export const chartRight = css`
-  position: absolute;
-  top: 276px;
-  left: 16px;
-`;

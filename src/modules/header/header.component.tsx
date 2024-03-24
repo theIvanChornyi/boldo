@@ -1,6 +1,6 @@
 import Button from '../../shared/components/button/button.component';
 import CompanyLogo from '../../shared/components/company-logo/company-logo.component';
-import NavItem from './components/components-nav-item.component';
+import NavItem from './components/header-nav-item.component';
 
 import { SIZE, VARIANT } from '../../shared/components/button/button.types';
 import { ROUTES } from '../../shared/const/routes.const';
