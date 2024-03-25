@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.73cb242a.css",
+    "main.js": "/static/js/main.a22176e5.js",
+    "static/js/453.d909a78e.chunk.js": "/static/js/453.d909a78e.chunk.js",
+    "static/media/support@2x.png": "/static/media/support@2x.8ac50d1d2a4d3916e257.png",
+    "static/media/support.png": "/static/media/support.41fa91b27d69dfc6542d.png",
+    "static/media/connect-chart-2.svg": "/static/media/connect-chart-2.b7ba522ef4f06de7708753b03543d642.svg",
+    "static/media/connect-item-2.jpg": "/static/media/connect-item-2.1c7cce592e87dabb5972.jpg",
+    "static/media/connect-item-1.jpg": "/static/media/connect-item-1.b0d6e90a272fbb8d43d4.jpg",
+    "static/media/blog-item-2.jpg": "/static/media/blog-item-2.ee70c64a6ad029ce3770.jpg",
+    "static/media/services-item-2.jpg": "/static/media/services-item-2.02b29361b03ce35fa4b0.jpg",
+    "static/media/connect-chart-1.svg": "/static/media/connect-chart-1.5328865a82160b94c786ddcb12b75559.svg",
+    "static/media/services-item-1.jpg": "/static/media/services-item-1.127167ad8e05c104870d.jpg",
+    "static/media/blog-item-3.jpg": "/static/media/blog-item-3.7b2424b6569e0b95afb6.jpg",
+    "static/media/blog-item-1.jpg": "/static/media/blog-item-1.2c5c65a7d442871f97bb.jpg",
+    "static/media/hero-frame-1.svg": "/static/media/hero-frame-1.d5f665283471c3c42c2d797695330547.svg",
+    "static/media/presto.svg": "/static/media/presto.44ee834ba0d7c65db6ab27d587004231.svg",
+    "static/media/boldo.svg": "/static/media/boldo.d560e55e9cb994780bb6cdad27cbbb5d.svg",
+    "static/media/hero-frame-3.svg": "/static/media/hero-frame-3.001d0733d2226f8a1ee7c7f70fc3cf44.svg",
+    "static/media/hero-frame-2.svg": "/static/media/hero-frame-2.70af8815f1ca0cffe2d71ee081fc1f26.svg",
+    "index.html": "/index.html",
+    "static/media/sun.svg": "/static/media/sun.fd69eefac7fe2c2bb2b0467b696e2450.svg",
+    "static/media/eye.svg": "/static/media/eye.69e5427c3cc12caea87de9d8b2880299.svg",
+    "static/media/feather.svg": "/static/media/feather.2b11d33796c1b8186766953cf5ad28c3.svg",
+    "static/media/boldo-logo.svg": "/static/media/boldo-logo.8acf92bca6bd42ec80ed65555c8fe80e.svg",
+    "static/media/arrow.svg": "/static/media/arrow.8e47bee13152c586ed1e1ea114efb03b.svg",
+    "main.73cb242a.css.map": "/static/css/main.73cb242a.css.map",
+    "main.a22176e5.js.map": "/static/js/main.a22176e5.js.map",
+    "453.d909a78e.chunk.js.map": "/static/js/453.d909a78e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73cb242a.css",
+    "static/js/main.a22176e5.js"
+  ]
+}
