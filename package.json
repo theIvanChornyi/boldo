@@ -2,6 +2,7 @@
   "name": "boldo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://theIvanChornyi.github.io/boldo",
   "dependencies": {
     "@emotion/css": "^11.11.2",
     "@testing-library/jest-dom": "^5.14.1",
