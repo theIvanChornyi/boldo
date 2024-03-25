@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/boldo/static/css/main.73cb242a.css",
-    "main.js": "/boldo/static/js/main.c1fdbe67.js",
+    "main.js": "/boldo/static/js/main.a7ade1db.js",
     "static/js/453.d909a78e.chunk.js": "/boldo/static/js/453.d909a78e.chunk.js",
     "static/media/support@2x.png": "/boldo/static/media/support@2x.8ac50d1d2a4d3916e257.png",
     "static/media/support.png": "/boldo/static/media/support.41fa91b27d69dfc6542d.png",
@@ -26,11 +26,11 @@
     "static/media/boldo-logo.svg": "/boldo/static/media/boldo-logo.8acf92bca6bd42ec80ed65555c8fe80e.svg",
     "static/media/arrow.svg": "/boldo/static/media/arrow.8e47bee13152c586ed1e1ea114efb03b.svg",
     "main.73cb242a.css.map": "/boldo/static/css/main.73cb242a.css.map",
-    "main.c1fdbe67.js.map": "/boldo/static/js/main.c1fdbe67.js.map",
+    "main.a7ade1db.js.map": "/boldo/static/js/main.a7ade1db.js.map",
     "453.d909a78e.chunk.js.map": "/boldo/static/js/453.d909a78e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73cb242a.css",
-    "static/js/main.c1fdbe67.js"
+    "static/js/main.a7ade1db.js"
   ]
 }
