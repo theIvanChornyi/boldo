@@ -4,11 +4,6 @@
 One page application, with responsive design for each type of devices (mobile phones, tablets, laptops and desctop version are here). 
 
 
-## Boldo page on Netlify
-
-https://boldo-p.netlify.app/
-
-
 ## Boldo page on GithubPages
 
 https://theivanchornyi.github.io/boldo/
