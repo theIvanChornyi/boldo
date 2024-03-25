@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
 
       <Dialog isOpen={isOpenExplore} close={closeExploreDialog}>
         <div className={css.chartContainer}>
-          <Chart />
+          <Chart data={[35, 30, 35]} />
         </div>
       </Dialog>
     </>
