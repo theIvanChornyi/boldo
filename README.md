@@ -9,6 +9,11 @@ One page application, with responsive design for each type of devices (mobile ph
 https://boldo-p.netlify.app/
 
 
+## Boldo page on GithubPages
+
+https://theivanchornyi.github.io/boldo/
+
+
 ## Tech Stack
 
 **Client:** React, Typescript, Emotion CSS, Swiper, ChartJs.
@@ -81,12 +86,6 @@ folder:
 
 In both cases, the project runs on the same port and is accessible via http://localhost:3000/
     
-## Deployment
-
-It use Netlify for deployment
-
-Just push your commit to main branch
-
 
 ## Reference 
 1. **Design** https://www.figma.com/community/file/1081611224529759785
