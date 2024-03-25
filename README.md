@@ -42,7 +42,7 @@ folder:
 2. Go to the project directory
 
 ```bash
-  cd frontend
+  cd boldo
 ```
 
 3. Install dependencies
@@ -70,7 +70,7 @@ folder:
 2. Go to the project directory
 
 ```bash
-  cd frontend
+  cd boldo
 ```
 
 3. Install dependencies and start the server
