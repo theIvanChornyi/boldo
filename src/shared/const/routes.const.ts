@@ -1,5 +1,5 @@
 export const ROUTES = Object.freeze({
-  HOME: '/',
+  HOME: '/boldo',
   HERO: 'Hero',
   PRODUCT: 'Product',
   SERVICES: 'Services',
